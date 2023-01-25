@@ -1,0 +1,145 @@
+.mainDiv {
+  margin-left: 30px;
+  margin-top: 30px;
+  height: 385px;
+  width: 250px;
+  background-color: rgb(51, 215, 122);
+  border-radius: 20px;
+  border: 2px solid #969696;
+}
+
+.container {
+  display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 15px;
+}
+
+.category {
+  position :relative;
+
+  top: -55px;
+  float: right;
+  margin-right: 5px;
+}
+.category h4 {
+  color: black;
+  /* -webkit-text-stroke: .1px white; */
+  background-color: rgb(51, 215, 122);
+  border-radius: 3px;
+}
+
+.name h3 {
+  color: black;
+  position: relative;
+  margin-left: 10px;
+  margin-top: -2px;
+  margin-right: 0;
+  width: 90%;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.productDiscription p {
+  position: relative;
+  margin-left: 10px;
+  bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+img {
+  height: 220px;
+  width: 250px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(51, 215, 122);
+}
+
+.navbar h1 {
+  margin-left: 20px;
+}
+ .btn{
+  position:fixed;
+  float:right;
+  margin-left: 78%;
+  bottom: 50px;
+  z-index: 1;
+ }
+
+ .nameAndDescription {
+  position: relative;
+  top: -55px;
+ }
+
+ .option {
+  margin-top: 25px;
+  height: 30px;
+  display:flex;
+  flex-direction: row-reverse;
+  width: 80%;
+  margin-right: 30px;
+}
+.navbar-option{
+  border-radius: 10px;
+ }
+
+ .search {
+  margin-top: 25px;
+  height: 25px;
+  margin-right: 30px;
+  max-width: 100px;
+  width: 30%;
+  border-radius: 10px;
+ }
+
+ @media only screen and (max-width: 450px) {
+  .container {
+    width: 91%;
+   padding-left: 30px;
+    background-color: lightblue;
+    overflow-x:auto;
+  }
+  .modal-wrapper {
+    height: 20%;
+  }
+}
+
+.modal-wrapper {
+  position: fixed;
+  left: 40%;
+  right: 0;
+  bottom: 0;
+  top: 30%;
+  height: 60%;
+  width: 60%;
+  border-radius: 25px;
+  background-color: rgb(181, 207, 229);
+  max-width: 500px;
+}
+
+.modal-container {
+ 
+  height: 100%;
+  left: 50%;
+  right: 10px;
+  bottom: 0;
+  top: 40%;
+  width: 100%;
+  position: fixed;
+}
+
+.modal-container .btn-close {
+  display: flex;
+  left: 40%;
+  top: -40px;
+}
